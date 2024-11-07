@@ -1,0 +1,166 @@
+/* General Body Style */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-image: url('wc.jpg'); 
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.5s ease-in-out;
+}
+
+
+/* Header Bar Style */
+.header {
+    background: linear-gradient(90deg, #ff7e5f, #feb47b); /* Gradient header */
+    color: white;
+    padding: 20px 0;
+    text-align: center; /* Center the title */
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Main Group Container */
+.main {
+    padding: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+/* Group Button Styles */
+.group-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.groupDiv {
+    background: linear-gradient(135deg, #ff8c00, #ff5e00); 
+    color: white;
+    padding: 25px 40px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(255, 94, 0, 0.2); 
+    transform: scale(1);
+    z-index: 1; 
+}
+
+.groupDiv:hover {
+    background: linear-gradient(135deg, #ff6f00, #d84b00); 
+    transform: scale(1.1);
+    box-shadow: 0 15px 35px rgba(255, 94, 0, 0.3);
+}
+
+/* Modal Styling */
+.modal-parent {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    pointer-events: none;
+}
+
+.modal-parent.show {
+    display: flex;
+    pointer-events: all;
+}
+
+.modal {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 900px;
+    width: 90%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.modal-head {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modal-head button {
+    background-color: #ff7e5f;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.modal-head button:hover {
+    background-color: #feb47b;
+}
+
+.modal-body {
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #ff7e5f;
+    color: white;
+    font-weight: bold;
+}
+
+td {
+    background-color: #f4f4f4;
+}
+
+/* Heading */
+h1 {
+    font-size: 35px;
+    color: white;
+    letter-spacing: 3px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* Close button styling when modal is active */
+.close-modal {
+    background-color: #ff7e5f;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.close-modal:hover {
+    background-color: #feb47b;
+}
